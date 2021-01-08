@@ -12,7 +12,7 @@ export default function About() {
 			<div className="mt-10 mb-10 py-12 bg-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="lg:text-center">
-						<h3 className="text-3xl font-semibold">About</h3>
+						<h3 className="text-3xl font-semibold">Contact Us</h3>
 					</div>
 				</div>
 			</div>
