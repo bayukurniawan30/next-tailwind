@@ -2,7 +2,9 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ ...pageProps }) {
+    console.log(pageProps);
+
     const navMenu = [
         { title: "Home", route: "/" },
         { title: "About", route: "/about" },
@@ -18,7 +20,9 @@ export default function Navbar() {
     return (
         <div>
             <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
-                <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+                {/* lg:justify-start for left menu */}
+                {/* lg:justify-between for right menu */}
+                <nav className={`relative flex items-center justify-between sm:h-10 ${pageProps.menuPosition == 'right' ? 'lg:justify-between' : 'lg:justify-start'}`} aria-label="Global">
                     <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                         <div className="flex items-center justify-between w-full md:w-auto">
                             <Link href="/">

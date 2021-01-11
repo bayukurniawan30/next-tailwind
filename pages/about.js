@@ -5,7 +5,7 @@ export default function About() {
 		<div>
 			<div className="relative bg-white">
 				<div className="max-w-7xl mx-auto">
-					<Navbar></Navbar>	
+					<Navbar menuPosition="right"></Navbar>	
 				</div>
 			</div>
 
